@@ -3,7 +3,7 @@
 mode = 'delete'
 # debug will allow you to see the actual score values, and also what the bot is "detecting" in the image (ie breast), if anything
 # ***IT WILL ALSO NOT DELETE ANY MEDIA***, so do not turn this on in normal moderation
-debug = True
+debug = False
 # bot prefix
 prefix = $
 # put your token here
