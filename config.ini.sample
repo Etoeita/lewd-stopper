@@ -1,0 +1,26 @@
+[bot]
+# mode is not used yet, and may be used in the future to censor nsfw content instead of just removing it
+mode = 'delete'
+# debug will allow you to see the actual score values, and also what the bot is "detecting" in the image (ie breast), if anything
+# ***IT WILL ALSO NOT DELETE ANY MEDIA***, so do not turn this on in normal moderation
+debug = True
+# bot prefix
+prefix = $
+# put your token here
+token =
+# put your client id here
+clientid =
+# permissions int, recommended to leave this alone
+botperms = 76800
+
+[policy]
+# how big a difference between safe and unsafe a determination needs to be for it to not be a tie
+# if you are getting a lot of ties, lower this number. if the bot is too strict, raise it
+denythreshold = 0.40
+# whether or not content deemed a "tie" between safe and unsafe should be removed.
+# recommended to leave this on True unless you need to be strict.
+allow_ties = True
+# what file extensions the bot should check. videos ARE supported by the NN, but you might encounter slow-downs if you
+# use them, especially if users do shit like upload an entire shrek movie
+acceptedfiles = png,jpg
+
